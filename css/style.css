@@ -1,0 +1,158 @@
+body {
+	min-width: 960px;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "PT Sans Narrow", "Tahoma", sans-serif;
+	background: #000000 url("../img/background-body.jpg") no-repeat center top;
+	color: #ffffff;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.page-header {
+	min-height: 355px;
+}
+
+.header-top {
+	padding: 0;
+	background: #000000;
+	height: 72px;
+}
+
+.main-nav {
+	float: left;
+	width: 640px;
+	height: 72px;
+	margin: 0;
+	padding: 0;
+}
+
+.main-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin: 0;
+	margin-top: 24px;
+  text-transform: uppercase;
+	list-style: none;
+	vertical-align: top;
+}
+
+.main-nav a {
+	padding: 28px 22px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+  background-color: #242424;
+}
+
+.main-nav .active {
+	padding-bottom: 24px;
+  border-bottom: 4px solid #ffffff;
+}
+
+.input {
+	position: relative;
+	float: right;
+	width: 300px;
+	padding-top: 24px;
+	text-align: right;
+}
+
+.input a {
+	padding: 28px 22px 28px 53px;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.input a::before {
+	content: "";
+	position: absolute;
+	top: 28px;
+	right: 70px;
+	width: 18px;
+	height: 16px;
+	background: url("../img/icon-login.png") no-repeat;
+	/*не знаю как указать цвет иконки, должен быть #d4d4d4,
+	а наследуется какой то другой*/
+}
+
+.input a:hover,
+.input a:active {
+  background-color: #242424;
+}
+
+.input a:hover::before {
+	background-color: #ffffff; /*не знаю как изменить цвет только иконки*/
+}
+
+.header-logo {
+	margin-top: 60px;
+	text-align: center;
+}
+
+.features {
+	margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+	margin-right: 20px;
+  text-align: center;
+	box-sizing: border-box;
+}
+.features-item:last-child {
+	margin-right: 0;
+}
+
+.features-item h2 {
+	margin: 0;
+	font-size: 30px;
+	line-height: 42px;
+	text-transform: uppercase;
+}
+
+.features-item p {
+	margin: 0;
+	margin-top: 60px;
+	padding: 0 15px 0 15px;
+	text-transform: uppercase;
+}
+
+.content {
+	width: 940px;
+	height: 420px;
+	background-color: #f9f6f3;
+	color: #000000;
+}
+
+.content-item {
+	width: 470px;
+}
+
+.news-list {
+	float: left;
+}
+
+.slider {
+	float: right;
+}
