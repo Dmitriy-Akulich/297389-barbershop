@@ -157,17 +157,17 @@ body {
 
 /* далее для catalog*/
 
-.logo-interior {
+.logo {
 	float: left;
 	margin: 0 20px;
 }
 
-.logo-interior img {
+.logo img {
 	vertical-align: middle;
 	padding: 24px 0;
 }
 
-.nav-interior {
+.nav {
 	width: 609px;
 }
 
@@ -286,7 +286,7 @@ body {
 	margin: 16px;
 	width: 187px;
 }
-.order p {
+.order span {
 	display: block;
 	float: left;
 	margin: 0;
