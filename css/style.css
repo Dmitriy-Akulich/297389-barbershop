@@ -4,10 +4,21 @@ body {
 	padding: 0;
 	font-size: 14px;
 	line-height: 24px;
+	color: #ffffff;
+	font-weight: normal;
 	font-family: "PT Sans Narrow", "Tahoma", sans-serif;
 	text-transform: uppercase;
 	background: #000000 url("../img/background-body.jpg") no-repeat center top;
-	color: #ffffff;
+}
+
+.body h1 {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.body h2 {
+	font-size: 24px;
+	line-height: 30px;
 }
 
 .container {
@@ -86,8 +97,6 @@ body {
 	width: 18px;
 	height: 16px;
 	background: url("../img/icon-login.png") no-repeat;
-	/*не знаю как указать цвет иконки, должен быть #d4d4d4,
-	а наследуется какой то другой*/
 }
 
 .user-block a:hover,
@@ -96,10 +105,10 @@ body {
 }
 
 .user-block a:hover::before {
-	background-color: #ffffff; /*не знаю как изменить цвет только иконки*/
+	  background: url("../img/icon-login-hover.png") no-repeat;
 }
 
-.header-logo {
+.index-logo {   /*+*/
 	margin-top: 60px;
 	text-align: center;
 }
@@ -131,10 +140,17 @@ body {
 	padding: 0 15px 0 15px;
 }
 
-.content {
+.index-content-up {  /*+*/
 	width: 940px;
-	height: 420px;
-	background-color: #f9f6f3;
+	height: 419px;
+	background: #f6f3f0 url("../img/layer-17.jpg") no-repeat center top;
+	color: #000000;
+}
+
+.index-content-button {
+	width: 940px;
+	height: 396px;
+	background: #f6f3f0 url("../img/layer-17-2.jpg") no-repeat center top;
 	color: #000000;
 }
 
@@ -151,8 +167,9 @@ body {
 }
 
 .main-footer {
-	background-color: #202020;
-	box-shadow: inset 0px 15px 20px -3px rgba(0, 0, 0, 1);
+	width: 2560px;
+	height: 193px;
+	background: #202020 url("../img/Layer-23.jpg") no-repeat center top;
 }
 
 /* далее для catalog*/
@@ -178,11 +195,9 @@ body {
 	box-sizing: border-box;
 }
 
-.container-catalog-header h1 {
+.container-catalog-header {
 	margin: 0;
-	padding-top: 43px;
-	font-size: 30px;
-	line-height: 42px;
+	padding-top: 37px;
 }
 
 .breadcrumbs {
