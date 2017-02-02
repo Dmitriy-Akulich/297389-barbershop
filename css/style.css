@@ -39,6 +39,7 @@ body {
 }
 
 .main-header { /*+*/
+	margin-bottom: 60px;
 	padding: 0;
 	background: #000000;
 	height: 72px;
@@ -47,7 +48,7 @@ body {
 .main-navigation {
 	float: left;
 	width: 760px;
-	height: 72px;
+	min-height: 72px;
 	margin: 0;
 	padding: 0;
 }
@@ -85,6 +86,7 @@ body {
 	position: relative;
 	float: right;
 	width: 180px;
+	min-height: 72px;
 	padding-top: 24px;
 	text-align: right;
 }
@@ -115,8 +117,11 @@ body {
 }
 
 .index-logo {   /*+*/
-	margin-top: 60px;
-	text-align: center;
+	width: 368px;
+  min-height: 204px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
 }
 
 .features {
@@ -126,6 +131,7 @@ body {
 .features-item {
   float: left;
   width: 300px;
+	min-height: 175px;
 	margin-right: 20px;
   text-align: center;
 	box-sizing: border-box;
@@ -147,6 +153,8 @@ body {
 }
 
 .index-content-up {  /*+*/
+	margin-bottom: 35px;
+	padding: 50px 80px;
 	width: 940px;
 	height: 419px;
 	background: #f6f3f0 url("../img/layer-17.jpg") no-repeat center top;
@@ -154,10 +162,24 @@ body {
 }
 
 .index-content-button {
+	margin-bottom: 35px;
+	padding: 50px 80px;
 	width: 940px;
 	height: 396px;
 	background: #f6f3f0 url("../img/layer-17-2.jpg") no-repeat center top;
 	color: #000000;
+}
+
+.index-content-left {
+  float: left;
+  width: 380px;
+  min-height: 330px;
+}
+
+.index-content-right {
+  float: right;
+  width: 300px;
+  min-height: 330px;
 }
 
 .content-item {
@@ -173,10 +195,32 @@ body {
 }
 
 .main-footer {
-	width: 2560px;
+
 	height: 193px;
-	background: #202020 url("../img/Layer-23.jpg") no-repeat center top;
+	background: #202020 url("../img/Layer-23.jpg") no-repeat top;
+  margin-top: 65px;
+
 }
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  min-height: 90px;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+  min-height: 90px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+  min-height: 90px;
+}
+
 
 /* далее для catalog*/
 
@@ -198,7 +242,6 @@ body {
 	min-height: 915px;
 	color: #000000;
 	background-color: #f7f4f1;
-	box-sizing: border-box;
 }
 
 .container-catalog-header {
@@ -211,13 +254,17 @@ body {
 	margin-bottom: 43px;
 }
 
-.breadcrumbs a,
-.breadcrumbs p {
+.breadcrumbs li {
 	display: inline-block;
-	position: relative;
-	margin: 0 20px;
 	line-height: 20px;
 	vertical-align: middle;
+}
+
+.breadcrumbs a,
+.breadcrumbs p {
+
+	margin: 0 20px;
+
 	font-weight: bold;
 	text-decoration: none;
 	color: #000000;
@@ -374,4 +421,32 @@ body {
 .catalog-item {
 	min-height: 902px;
 	background-color: #f8f5f2;
+}
+
+.slider-foto-item {
+	float: left;
+	margin: 0;
+	width: 460px;
+	min-height: 685px;
+}
+
+.slider-foto-item-icon a {
+	margin: 0;
+	padding: 0;
+}
+
+.product-description {
+	float: right;
+	margin: 0;
+	width: 460px;
+	min-height: 685px;
+}
+
+.product-description .order {
+	margin: 30px auto 30px 0;
+}
+
+.product-description h2 {
+	display: block;
+	margin-top: 120px;
 }
